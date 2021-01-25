@@ -1,0 +1,57 @@
+.grid1 {
+
+    @mixin atMedium {
+    display: grid;
+    grid-template-columns: 1fr 1.7fr;
+    grid-gap: 65px;
+    }
+
+    &__4 {
+        margin-bottom: 1rem;
+
+        @mixin atMedium {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.grid2 {
+    @mixin atMedium {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-column-gap: 100px;
+        grid-row-gap: 2.5rem;
+    }
+
+    &__block {
+        @mixin atSmall {
+            display: grid;
+            grid-template-columns: 1fr 5fr;
+        }
+    }
+
+    &__block__title {
+        font-weight: 300;
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+        text-align: center;
+        margin-top: .7em;
+
+        @mixin atSmall {
+            text-align: left;
+            margin-top: 0;
+            font-size: 1.875rem;        
+        }
+    }
+
+    &__block__icon {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5rem;
+
+        @mixin atSmall {
+            margin: 0 0;
+        }
+    }
+}
