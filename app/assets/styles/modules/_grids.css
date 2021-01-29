@@ -16,7 +16,7 @@
 }
 
 .grid2 {
-    @mixin atMedium {
+    @mixin atLarge {
         display: grid;
         grid-template-columns: auto auto;
         grid-column-gap: 100px;
@@ -53,5 +53,17 @@
         @mixin atSmall {
             margin: 0 0;
         }
+    }
+}
+
+.grid3 {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-gap: 18px;
+
+    @mixin atLarge {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 45px;
     }
 }
