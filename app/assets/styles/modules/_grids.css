@@ -24,7 +24,7 @@
     }
 
     &__block {
-        @mixin atSmall {
+        @mixin atMedium {
             display: grid;
             grid-template-columns: 1fr 5fr;
         }
@@ -38,9 +38,12 @@
         margin-top: .7em;
 
         @mixin atSmall {
-            text-align: left;
             margin-top: 0;
             font-size: 1.875rem;        
+        }
+
+        @mixin atMedium {
+            text-align: left;
         }
     }
 
@@ -50,7 +53,7 @@
         margin-right: auto;
         margin-top: 5rem;
 
-        @mixin atSmall {
+        @mixin atMedium {
             margin: 0 0;
         }
     }
